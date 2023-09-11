@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         body {
+            background-image: url('https://media.licdn.com/dms/image/D4D05AQEDTDGpb7VS2Q/videocover-low/0/1688537738031?e=2147483647&v=beta&t=z8PE5ladssJUBhDKPVzHl2t_UNbMT00lV3ey667Nei8'); /* Add the URL of your background image */
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        /* Styling for the menu bar */
+        .menu-bar {
+            background-color: #333;
+            overflow: hi0dden;
+        }
+
+        /* Styling for the menu items */
+        .menu-item {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .menu-item:hover {
+            background-color: #555;
+        }
+
+        /* Styling for sub-menus */
+        .sub-menu {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            z-index: 1;
+        }
+
+        /* Show sub-menu on hover */
+        .menu-item:hover .sub-menu {
+            display: block;
+        }
+       /* Show sub-menu on hover */
+        .menu-item:hover .sub-menu {
+            display: block;
+        }
+
+        /* Styling for sub-menu items */
+        .sub-menu-item {
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        /* Change color on sub-menu item hover */
+        .sub-menu-item:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-bar">
+    <div class="menu-item">
+        AWS
+        <div class="sub-menu">
+            <a href="ec2.html" class="sub-menu-item">Instance</a>
+            <a href="bucket.html" class="sub-menu-item">Bucket</a>
+            <a href="poly.html" class="sub-menu-item">amazon poly</a>
+            <a href="translate.html" class="sub-menu-item">amazon translate</a>
+            <a href="location.html" class="sub-menu-item">Location</a>
+        </div>
+    </div>
+   <div class="menu-item">
+        Docker
+        <div class="sub-menu">
+            <a href="docker.html" class="sub-menu-item">docker container</a>
+        </div>
+    </div>
+   <div class="menu-item">
+        Linux
+        <div class="sub-menu">
+            <a href="command.html" class="sub-menu-item">Commands</a>
+         </div>
+   </div>
+</div>
+
+</body>
+</html>

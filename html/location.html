@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocation and Google Maps</title>
+</head>
+<body>
+    <h1>My Location</h1>
+    <form action="/cgi-bin/location.py" method="GET">
+        <button type="submit">Find My Location</button>
+    </form>
+    <p>Your current coordinates: <span id="coordinates"></span></p>
+    <a id="googleMapLink" target="_blank" style="display: none;">Open in Google Maps</a>
+</body>
+</html>

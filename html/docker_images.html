@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docker Pull Page</title>
+</head>
+<body>
+    <h1>Docker Pull</h1>
+    <p>Wanna pull a Docker Image.</p>
+    <form action="/cgi-bin/docker_pull.py" method="post">
+        <button type="submit">Docker Pull</button>
+    </form>
+</body>
+</html>
+
+
+[root@ip-172-31-47-58 html]# cat docker_images.html 
+<html>
+        <form action="cgi-bin/docker_images.py">
+                input<input name="n" />
+                <button>click me</button>
+        </form>
+
+</html>

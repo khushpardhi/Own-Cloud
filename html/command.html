@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function lw() {
+            var xhr = new XMLHttpRequest();
+
+            var mycmd = document.getElementById("in1").value;
+
+            xhr.open("GET", "cgi-bin/command.py?c=" + mycmd, true);
+            xhr.send();
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    document.getElementById("p1").innerHTML = this.responseText;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="in1">Enter your command:</label>
+    <input id="in1" onkeyup="lw()" />
+    <br />
+    <input type='submit' />
+    <pre>
+        <p id="p1">Loading...</p>
+    </pre>
+</body>
+</html>

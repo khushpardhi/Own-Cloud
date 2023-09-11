@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocation and Google Maps</title>
+</head>
+<body>
+    <h1>My Location</h1>
+    <form action="/cgi-bin/location.py" method="GET">
+        <button type="submit">Find My Location</button>
+    </form>
+    <p>Your current coordinates: <span id="coordinates"></span></p>
+    <a id="googleMapLink" target="_blank" style="display: none;">Open in Google Maps</a>
+</body>
+</html>
+
+[root@ip-172-31-47-58 html]# cat docker.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docker Buttons</title>
+</head>
+<body>
+    <h1>Docker Management</h1>
+    <button onclick="navigateTo('docker_pull.html')">Docker Pull Page</button>
+    <button onclick="navigateTo('docker_images.html')">Docker Images Page</button>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

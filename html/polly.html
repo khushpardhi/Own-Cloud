@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text-to-Speech (Amazon Polly)</title>
+</head>
+<body>
+    <h1>Text-to-Speech (Amazon Polly)</h1>
+    <form action="/cgi-bin/polly.py" method="POST">
+        <label for="text">Enter Text:</label><br>
+        <textarea id="text" name="text" rows="5" cols="50" required></textarea><br>
+        <button type="submit">Convert to Speech</button>
+    </form>
+    <div id="speech">
+        <h2>Speech Output:</h2>
+        <audio controls id="audioPlayer">
+            <!-- Audio will be played here -->
+        </audio>
+    </div>
+</body>
+</html>
